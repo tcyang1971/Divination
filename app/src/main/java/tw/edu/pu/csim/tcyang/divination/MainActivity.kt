@@ -1,6 +1,8 @@
 package tw.edu.pu.csim.tcyang.divination
 
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,4 +19,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    fun Start(v: View){
+        var t: TextView = findViewById(R.id.txv)
+        t.text = "開始擲茭..."
+    }
+
 }
