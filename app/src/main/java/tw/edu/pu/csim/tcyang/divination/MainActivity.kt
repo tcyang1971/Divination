@@ -39,6 +39,13 @@ class MainActivity : AppCompatActivity() {
         } else {
             img2.setImageResource(R.drawable.nightside2)
         }
+
+        when (a+b) {
+            0 -> t.text = "笑筊(表示神明一笑、不解，或者考慮中)"
+            1 -> t.text = "聖筊(表示神明允許、同意，或行事會順利)"
+            else -> t.text = "陰筊(表示神明否定、憤怒，或者不宜行事)"
+        }
+
     }
 
 }
